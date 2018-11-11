@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def label = "worker-${UUID.randomUUID().toString()}"
 
 podTemplate(label: label, containers: [
