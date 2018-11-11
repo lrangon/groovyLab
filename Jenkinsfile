@@ -14,7 +14,7 @@ import groovy.json.JsonOutput
 import java.net.URL
  
 try {
-node {
+node('master') {
 stage '\u2776 Stage 1'{
 
 }
