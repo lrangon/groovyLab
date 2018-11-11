@@ -14,7 +14,7 @@ import groovy.json.JsonOutput
 import java.net.URL
  
 try {
-node('master') {
+node {
 stage '\u2776 Stage 1'{
 
 }
@@ -46,7 +46,7 @@ catch (exc) {
      // currentBuild.result must be non-null for this step to work.
      step([$class: 'Mailer',
         notifyEveryUnstableBuild: true,
-        recipients: "loic.rangon@gamil.com",
+        recipients: "${email_to}",
         sendToIndividuals: true])
  }
  
