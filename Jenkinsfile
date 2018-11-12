@@ -12,7 +12,7 @@ spec:
   containers:
   - name: jnlp
     image: 'jenkinsci/jnlp-slave:3.10-1-alpine'
-    args: ["${computer.jnlpmac} ${computer.name}"]
+    args: [\"${computer.jnlpmac} ${computer.name}\"]
     tty: true
   - name: graddle
     image: 'gradle:4.5.1-jdk9'
