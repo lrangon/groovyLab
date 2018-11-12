@@ -12,11 +12,6 @@ spec:
   securityContext:
     runAsUser: 0
   containers:
-  - name: gradle
-    image: 'gradle:4.5.1-jdk9'
-    command:
-    - cat
-    tty: true
   - name: docker
     image: 'docker'
     command:
