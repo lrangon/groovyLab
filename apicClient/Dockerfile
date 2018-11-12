@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 RUN npm config -g set strict-ssl false && \
 #    npm config set proxy http://proxy_address:port && \
 #    npm config set https-proxy http://proxy_address:port && \
-    npm install -g apiconnect && \
+    npm install -g apiconnect --unsafe-perm=true --allow-root && \
     apic -v
 
 # If you are building your code for production
