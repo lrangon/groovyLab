@@ -10,7 +10,7 @@ metadata:
     app: "apic-c4-client"
 spec:
   containers:
-  - name: graddle
+  - name: gradle
     image: 'gradle:4.5.1-jdk9'
     command:
     - cat
