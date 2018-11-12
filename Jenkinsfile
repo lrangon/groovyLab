@@ -9,6 +9,8 @@ metadata:
   labels:
     app: "apic-c4-client"
 spec:
+  securityContext:
+    runAsUser: 0
   containers:
   - name: gradle
     image: 'gradle:4.5.1-jdk9'
